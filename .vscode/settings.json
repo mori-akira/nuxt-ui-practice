@@ -4,7 +4,9 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.defaultProfile.linux": "bash",
-    "cSpell.words": [],
+    "cSpell.words": [
+        "nuxt"
+    ],
     "explorer.fileNesting.enabled": true,
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
