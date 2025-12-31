@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/ui"],
   css: ["~/assets/css/main.css"],
+  app: {
+    baseURL: "/nuxt-ui-practice/",
+  },
   nitro: {
     output: {
       dir: "docs",
