@@ -7,10 +7,4 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/nuxt-ui-practice/",
   },
-  nitro: {
-    output: {
-      dir: "docs",
-      publicDir: "docs",
-    },
-  },
 });
