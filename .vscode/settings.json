@@ -5,7 +5,9 @@
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.defaultProfile.linux": "bash",
     "cSpell.words": [
-        "nuxt"
+        "lucide",
+        "nuxt",
+        "slideover"
     ],
     "explorer.fileNesting.enabled": true,
     "[javascript]": {
