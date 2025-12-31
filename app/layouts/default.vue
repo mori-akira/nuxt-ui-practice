@@ -36,28 +36,7 @@
       </template>
 
       <template #content="{ close }">
-        <div class="h-full flex flex-col">
-          <div
-            class="h-(--ui-header-height) flex items-center justify-start px-4"
-          >
-            <UButton
-              color="neutral"
-              variant="ghost"
-              icon="i-lucide-x"
-              aria-label="Close menu"
-              @click="close?.()"
-            />
-            <h2 class="text-gray-800 font-bold">メニュー</h2>
-          </div>
-
-          <div class="p-4 sm:p-6 overflow-y-auto">
-            <UNavigationMenu
-              :items="menuItems"
-              orientation="vertical"
-              class="-mx-2.5"
-            />
-          </div>
-        </div>
+        <AppNavigationMenu :close="close" />
       </template>
     </UHeader>
 
@@ -77,22 +56,3 @@
     </UFooter>
   </UApp>
 </template>
-
-<script setup lang="ts">
-import type { NavigationMenuItem } from "@nuxt/ui";
-
-const route = useRoute();
-const menuItems = computed<NavigationMenuItem[]>(() => [
-  {
-    label: "ホーム",
-    to: "/",
-    active: route.path === "/",
-  },
-]);
-</script>
-
-<style scoped>
-div[data-side="left"] div[data-slot="right"] {
-  display: none;
-}
-</style>
