@@ -37,5 +37,10 @@ const menuItems = computed<NavigationMenuItem[]>(() => [
     to: "/",
     active: route.path === "/",
   },
+  {
+    label: "デュアルリスト",
+    to: "/transfer-list",
+    active: route.path.startsWith("/transfer-list"),
+  },
 ]);
 </script>
